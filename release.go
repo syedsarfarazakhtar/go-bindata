@@ -44,6 +44,7 @@ func writeReleaseHeader(w io.Writer, c *Config) error {
 			return header_compressed_memcopy(w)
 		}
 	}
+	return nil
 }
 
 // writeReleaseAsset write a release entry for the given asset.
